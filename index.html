@@ -3,6 +3,8 @@
   <head>
   <meta charset="UTF-8">
   <meta name="description" content="Um quiz interativo para testar seus conhecimentos.", initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+
   <title>Quiz para programadores</title>
   </head>
   <body>
@@ -23,7 +25,7 @@
 
         <!--Pergunta 1: múltipla escolha-->
         <section>
-          <h2>pegunta1: Qual linguagem é usada para estruturar páginas web?</h2>
+          <h2>pegunta 1: Qual linguagem é usada para estruturar páginas web?</h2>
           <form>
             <input type="radio" value="Python" id="p1a" name="pergunta1" >
             <label for="p1a">Python</label><br>
@@ -81,7 +83,7 @@
         <section>
           <h2>Pergunta 6: Faça o upload de um arquivo contendo código HTML</h2>
           <form>
-            <input type="file" id="p6" name="pergunta6" >
+            <input class="escolher-arquivo" type="file" id="p6" name="pergunta6" >
           </form> 
         </section>
 
@@ -176,6 +178,7 @@
             <input type="email" id="email" name="email" placeholder="Digite seu email..."><br><br>
             <label for="comentarios">Comentários:</label><br>
             <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Digite seus comentários..."></textarea><br><br>
+            <button onclick="alert('FEEDBACK ENVIADO')">Envie o Feedback</button>
             </fieldset>
           </form>
         </section>
@@ -183,10 +186,10 @@
       </main>
 
       <footer>
-        <p>&copy Quiz de programadores. Todos os direitos reservados.</p>
+        <p class="paragrafo-footer">&copy Quiz de programadores. Todos os direitos reservados.</p>
 
-        <p>Para conhecer outros quizzes <a href="https://pt.quizur.com/trivia/voce-sabe-algo-de-programacao-1n8sm" target="_blank">clique aqui</a></p>
+        <p class="paragrafo-footer">Para conhecer outros quizzes <a href="https://pt.quizur.com/trivia/voce-sabe-algo-de-programacao-1n8sm" target="_blank">clique aqui</a></p>
 
-      </footer>
+      </footer>  
 
 </html>
